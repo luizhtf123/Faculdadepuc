@@ -4,13 +4,12 @@
 main()
 {
 	float pi = 3.14, raio, area;
-	
-	printf("Esse codigo calcula a area de um circulo de qualquer raio\n");
-	
-	printf("Informe o raio da circunferencia: \n");
+
+	printf("Digite o valor do raio: ");
 	scanf("%f", &raio);
 	
-	area = pi*(raio*raio);
-	
-	printf("Essa e a area do circulo:\n%.2f", area);
+	if(raio > 0){
+		area = pi * (raio * raio );
+		printf("Essa e a area do circulo:%.2f\n", area);
+	}
 }
